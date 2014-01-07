@@ -1,0 +1,22 @@
+!!!
+html
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content="Ajmal Afif's website")
+    meta(name='author', content= "Ajmal Afif")
+
+    title= post.title
+    
+    link(rel='stylesheet', href='../css/master.css')
+  body
+    header
+      h1 my awesome blog
+
+    .blog
+      h2= post.title
+      != content
+      a(href='/') &laquo; back to index
+
+  //- add other scripts through require.js, not here
+  script(data-main="../js/main", src="../js/require.js")
