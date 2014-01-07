@@ -1,0 +1,6 @@
+include ../_header
+
+ul#work
+  - each post in sort(site.work, { by: 'date' })
+    li
+      a(href="#{post.url}")= post.title
